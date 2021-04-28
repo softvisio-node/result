@@ -22,10 +22,6 @@
             "node": "./lib/index.js"
         }
     },
-    "main": "./lib/index.js",
-    "browser": {
-        "./lib/index.js": "./lib/browser.js"
-    },
     "scripts": {
         "lint": "softvisio-cli lint"
     },
