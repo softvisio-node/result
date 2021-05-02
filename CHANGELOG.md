@@ -1,3 +1,9 @@
+## 2.1.1 (2021-05-02)
+
+### Raw commits log
+
+-   browser resources loader fix;
+
 ## 2.1.0 (2021-05-02)
 
 ### Raw commits log
