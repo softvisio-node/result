@@ -13,7 +13,9 @@
     },
     "license": "ISC",
     "author": "<zdm@softvisio.net>",
+    "type": "module",
     "imports": {
+        "#lib/*": "./lib/*.js",
         "#resources/*": "./resources/*"
     },
     "exports": {
