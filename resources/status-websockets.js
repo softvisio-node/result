@@ -1,4 +1,4 @@
-{
+export default {
     "1000": "Normal Closure",
     "1001": "Going Away",
     "1002": "Protocol error",
@@ -13,5 +13,5 @@
     "1011": "Internal Error",
     "1012": "Service Restart",
     "1013": "Try Again Later",
-    "1015": "TLS handshake"
-}
+    "1015": "TLS handshake",
+};

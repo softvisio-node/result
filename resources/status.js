@@ -1,4 +1,4 @@
-{
+export default {
     "100": "Continue",
     "101": "Switching Protocols",
     "102": "Processing",
@@ -61,5 +61,5 @@
     "508": "Loop Detected",
     "509": "Bandwidth Limit Exceeded",
     "510": "Not Extended",
-    "511": "Network Authentication Required"
-}
+    "511": "Network Authentication Required",
+};
