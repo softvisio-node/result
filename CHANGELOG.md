@@ -1,3 +1,9 @@
+## 2.1.3 (2021-05-03)
+
+### Raw commits log
+
+-   exports updated;
+
 ## 2.1.2 (2021-05-02)
 
 ### Raw commits log
