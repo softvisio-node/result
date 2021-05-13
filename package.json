@@ -19,7 +19,7 @@
     },
     "exports": {
         ".": {
-            "browser": "./lib/browser.js",
+            "browser": "./lib/_browser/index.js",
             "node": "./lib/index.js"
         }
     },
