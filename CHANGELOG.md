@@ -1,3 +1,11 @@
+## 2.2.0 (2021-05-24)
+
+### Raw commits log
+
+-   bench added;
+-   tests added;
+-   reason setter added;
+
 ## 2.1.6 (2021-05-19)
 
 ### Raw commits log
