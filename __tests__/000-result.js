@@ -1,6 +1,4 @@
-// import { jest } from "@jest/globals";
-
-import result from "../lib/_browser/index.js";
+import "#lib/index";
 
 test( "1", () => {
     const res = result( 200 );

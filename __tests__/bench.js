@@ -1,5 +1,4 @@
-import tests from "@softvisio/core/tests";
-import "@softvisio/result";
+import "#lib/index";
 
 const t = {
     status_only () {
@@ -16,4 +15,4 @@ const t = {
     },
 };
 
-await tests.bench( t, 1000000 );
+bench( t, 1000000 );
