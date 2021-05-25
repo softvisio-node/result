@@ -15,4 +15,4 @@ const t = {
     },
 };
 
-bench( t, 1000000 );
+bench( "result", t, 1000000 );
