@@ -1,3 +1,9 @@
+## 2.3.0 (2021-05-28)
+
+### Raw commits log
+
+-   tests updated;
+
 ## 2.2.0 (2021-05-24)
 
 ### Raw commits log
