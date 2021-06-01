@@ -1,3 +1,9 @@
+## 2.3.1 (2021-06-01)
+
+### Raw commits log
+
+-   lint config removed;
+
 ## 2.3.0 (2021-05-28)
 
 ### Raw commits log
