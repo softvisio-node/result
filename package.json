@@ -2,14 +2,14 @@
     "name": "@softvisio/result",
     "version": "2.3.1",
     "description": "Result",
-    "homepage": "https://bitbucket.org/softvisio/softvisio-result",
+    "homepage": "https://github.com/softvisio/result",
     "bugs": {
-        "url": "https://bitbucket.org/softvisio/softvisio-result/issues",
+        "url": "https://github.com/softvisio/result/issues",
         "email": "zdm@softvisio.net"
     },
     "repository": {
         "type": "git",
-        "url": "https://bitbucket.org/softvisio/softvisio-result.git"
+        "url": "https://github.com/softvisio/result.git"
     },
     "license": "ISC",
     "author": "<zdm@softvisio.net>",
