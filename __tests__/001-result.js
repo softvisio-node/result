@@ -1,5 +1,7 @@
 import "#lib/index";
 
+console.log( result );
+
 test( "1", () => {
     const res = result( 200 );
 
