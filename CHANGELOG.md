@@ -1,3 +1,14 @@
+## 3.0.0 (2021-06-05)
+
+**Raw commits log**
+
+-   try/catch/parse methods renamed;
+-   docs added;
+-   homepage updated;
+-   minor code improvements;
+-   changelog updated;
+-   moved to github;
+
 ## 2.3.1 (2021-06-01)
 
 **Raw commits log**
