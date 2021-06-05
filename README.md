@@ -44,12 +44,12 @@ Creates new result object.
 
 **Parameters**
 
--   `status` one of:
+-   `status`, one of:
 
     -   status code - integer status code;
     -   [status code, reason] - status code with custom reason.
 
-    If reason is not provided it will be resolver and set automatically accordin to the standard HTTP status reasons.
+    If reason is not provided it will be resolved and set automatically accordin to the standard HTTP status reasons.
 
 -   `data` - arbitrary data that represents returned value. This data is accesible via `result.data` property.
 -   `properties` - object, additional meta properties, that will be stored in result object.
