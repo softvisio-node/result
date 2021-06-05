@@ -1,8 +1,8 @@
 {
     "name": "@softvisio/result",
     "version": "2.3.1",
-    "description": "Result",
-    "homepage": "https://github.com/softvisio/result",
+    "description": "Result object",
+    "homepage": "https://softvisio.github.io/result/",
     "bugs": {
         "url": "https://github.com/softvisio/result/issues",
         "email": "zdm@softvisio.net"
