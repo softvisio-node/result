@@ -1,8 +1,8 @@
-> :information_source: Please, see the full project documentation here: [**https://softvisio.github.io/result/**](https://softvisio.github.io/result/).
+> :information_source: Please, see the full project documentation here: [https://softvisio.github.io/result/](https://softvisio.github.io/result/).
 
-> :no_entry: Do not edit. This file is generated automatocally by `@softvisio/cli`.
+> :warning: Do not edit. This file is generated automatocally by `@softvisio/cli`.
 
-## Overview
+# Introduction
 
 Serializable result object, that encapsulates operation status, reason and returned data.
 
