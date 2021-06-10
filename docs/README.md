@@ -4,13 +4,13 @@ Serializable result object, that encapsulates operation status, reason and retur
 
 ## Install
 
-```
+```shell
 npm i @softvisio/result
 ```
 
 Under `node` environment it also register itself as `global.result`, so you don;t need to import it into all modules;
 
-## Synopsis
+## Usage
 
 ```js
 result(200);
@@ -54,12 +54,12 @@ Creates new result object.
 
 Example:
 
-```
-const res = result(500, {"a": 1}, {"meta": "some data"});
+```js
+const res = result(500, { a: 1 }, { meta: "some data" });
 
-console.log( res.ok ); // false
-console.log( res.status ); // 500
-console.log( res.reason ); // Internal Server Error
-console.log( res.data ); // {"a": 1}
-console.log( res.meta ); // "some data"
+console.log(res.ok); // false
+console.log(res.status); // 500
+console.log(res.reason); // Internal Server Error
+console.log(res.data); // {"a": 1}
+console.log(res.meta); // "some data"
 ```
