@@ -54,12 +54,13 @@ Creates new result object.
 
 Example:
 
+<!-- prettier-ignore -->
 ```js
 const res = result(500, { a: 1 }, { meta: "some data" });
 
-console.log(res.ok); // false
+console.log(res.ok);     // false
 console.log(res.status); // 500
 console.log(res.reason); // Internal Server Error
-console.log(res.data); // {"a": 1}
-console.log(res.meta); // "some data"
+console.log(res.data);   // {"a": 1}
+console.log(res.meta);   // "some data"
 ```
