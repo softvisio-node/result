@@ -5,7 +5,7 @@ test( "1", () => {
 
     expect( res.toJSON() ).toStrictEqual( {
         "status": 200,
-        "reason": "OK",
+        "status_text": "OK",
         "exception": false,
         "data": undefined,
     } );
@@ -16,7 +16,7 @@ test( "2", () => {
 
     expect( res.toJSON() ).toStrictEqual( {
         "status": 200,
-        "reason": "OK",
+        "status_text": "OK",
         "exception": false,
         "data": "data",
         "a": 1,
@@ -29,18 +29,18 @@ test( "3", () => {
 
     expect( res.toJSON() ).toStrictEqual( {
         "status": 200,
-        "reason": "OK",
+        "status_text": "OK",
         "exception": false,
         "data": undefined,
     } );
 } );
 
 test( "4", () => {
-    const res = result( [200, "reason"] );
+    const res = result( [200, "message"] );
 
     expect( res.toJSON() ).toStrictEqual( {
         "status": 200,
-        "reason": "reason",
+        "status_text": "message",
         "exception": false,
         "data": undefined,
     } );
@@ -51,20 +51,20 @@ test( "5", () => {
 
     expect( res.toJSON() ).toStrictEqual( {
         "status": 200,
-        "reason": "OK",
+        "status_text": "OK",
         "exception": false,
         "data": undefined,
     } );
 } );
 
 test( "6", () => {
-    const _res = result( [300, "reason"], "data", { "a": 1, "b": 2 } );
+    const _res = result( [300, "message"], "data", { "a": 1, "b": 2 } );
 
     const res = result( _res );
 
     expect( res.toJSON() ).toStrictEqual( {
         "status": 300,
-        "reason": "reason",
+        "status_text": "message",
         "exception": false,
         "data": undefined,
     } );
