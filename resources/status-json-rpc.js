@@ -13,4 +13,5 @@ export default {
 
     // custom error codes
     "-32800": "RPC calls are not supported",
+    "-32801": "Insufficient permissions",
 };
