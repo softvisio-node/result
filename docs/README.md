@@ -12,7 +12,7 @@ Under `node` environment it also register itself as `global.result`, so you don;
 
 ## Usage
 
-```js
+```javascript
 result(200);
 
 result([200, "Completed"]); // custom reason
@@ -55,7 +55,7 @@ Creates new result object.
 Example:
 
 <!-- prettier-ignore -->
-```js
+```javascript
 const res = result(500, { a: 1 }, { meta: "some data" });
 
 console.log(res.ok);     // false
