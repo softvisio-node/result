@@ -16,12 +16,13 @@ Under `node` environment it also register itself as `global.result`, so you don;
 
 ## Usage
 
+<!-- prettier-ignore -->
 ```javascript
 result(200);
 
-result([200, "Completed"]); // custom reason
+result( [200, "Completed"] ); // custom reason
 
-result(200, { data }); // with some data
+result( 200, { data } );      // with some data
 ```
 
 ## Properties
@@ -60,11 +61,11 @@ Example:
 
 <!-- prettier-ignore -->
 ```javascript
-const res = result(500, { a: 1 }, { meta: "some data" });
+const res = result( 500, { a: 1 }, { meta: "some data" } );
 
-console.log(res.ok);     // false
-console.log(res.status); // 500
-console.log(res.reason); // Internal Server Error
-console.log(res.data);   // {"a": 1}
-console.log(res.meta);   // "some data"
+console.log( res.ok );     // false
+console.log( res.status ); // 500
+console.log( res.reason ); // Internal Server Error
+console.log( res.data );   // {"a": 1}
+console.log( res.meta );   // "some data"
 ```
