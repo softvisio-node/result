@@ -4,14 +4,19 @@
 // XML-RPC at the following url: http://xmlrpc-epi.sourceforge.net/specs/rfc.fault_codes.php
 
 export default {
-    "-32700": "Parse error",
-    "-32600": "Invalid Request",
-    "-32601": "Method not found    ",
-    "-32602": "Invalid params",
-    "-32603": "Internal error",
-    "-32000": "Server error", // -32000 to -32099
+    "-32700": [400, "Parse Error"],
+    "-32600": [400, "Invalid Request"],
+    "-32601": [404, "Method Not Found"],
+    "-32602": [400, "Invalid Params"],
+    "-32603": [500, "Internal Error"],
+    "-32000": [500, "Server Error"], // -32000 to -32099
 
     // custom error codes
-    "-32800": "RPC calls are not supported",
-    "-32801": "Insufficient permissions",
+    "-32800": [400, "RPC Calls Are Not Supported"],
+    "-32801": [400, "Insufficient Permissions"],
+    "-32802": [400, "Too Many Requests"],
+    "-32803": [415, "Invalid Content Type"],
+    "-32804": [405, "HTTP Method Not Allowed"],
+    "-32805": [413, "Payload Too Large"],
+    "-32806": [411, "Length Required"],
 };
