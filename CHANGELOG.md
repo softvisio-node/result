@@ -1,5 +1,17 @@
 # Changelog
 
+### 4.0.0 (2021-06-13)
+
+Changed:
+
+-   result.reason renamed to result.statusText;
+
+Added:
+
+-   result refactored;
+-   json rpc statuses added;
+-   support for Result-like objects added;
+
 ### 3.1.0 (2021-06-11)
 
 Changed:
