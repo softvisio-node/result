@@ -4,7 +4,7 @@
 
 # Introduction
 
-Serializable result object, that encapsulates operation status, reason and returned data.
+Serializable result object, that encapsulates operation status, statusText and returned data.
 
 ## Install
 
@@ -20,7 +20,7 @@ Under `node` environment it also register itself as `global.result`, so you don;
 ```javascript
 result(200);
 
-result( [200, "Completed"] ); // custom reason
+result( [200, "Completed"] ); // custom status text
 
 result( 200, { data } );      // with some data
 ```
@@ -35,7 +35,7 @@ Returns `true` if result is successful, otherwise returns `false`.
 
 Integer status code.
 
-### reason
+### statusText
 
 Status text.
 
@@ -50,9 +50,9 @@ Creates new result object.
 -   `status`, one of:
 
     -   status code - integer status code;
-    -   [status code, reason] - status code with custom reason.
+    -   [status code, statusText] - status code with custom status text.
 
-    If reason is not provided it will be resolved and set automatically accordin to the standard HTTP status reasons.
+    If `statusText` is not provided it will be resolved and set automatically accordin to the standard HTTP statuses.
 
 -   `data` - arbitrary data that represents returned value. This data is accesible via `result.data` property.
 -   `properties` - object, additional meta properties, that will be stored in result object.
@@ -63,9 +63,9 @@ Example:
 ```javascript
 const res = result( 500, { a: 1 }, { meta: "some data" } );
 
-console.log( res.ok );     // false
-console.log( res.status ); // 500
-console.log( res.reason ); // Internal Server Error
-console.log( res.data );   // {"a": 1}
-console.log( res.meta );   // "some data"
+console.log( res.ok );         // false
+console.log( res.status );     // 500
+console.log( res.statusText ); // Internal Server Error
+console.log( res.data );       // {"a": 1}
+console.log( res.meta );       // "some data"
 ```
