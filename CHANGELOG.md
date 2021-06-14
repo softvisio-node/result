@@ -1,5 +1,12 @@
 # Changelog
 
+### 4.1.0 (2021-06-14)
+
+Changed:
+
+-   RPC response codes updated;
+-   docs updated;
+
 ### 4.0.0 (2021-06-13)
 
 Changed:
