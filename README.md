@@ -18,6 +18,8 @@ Under `node` environment it also register itself as `global.result`, so you don;
 
 <!-- prettier-ignore -->
 ```javascript
+import result from "@softvisio/result";
+
 result(200);
 
 result( [200, "Completed"] ); // custom status text
@@ -25,21 +27,41 @@ result( [200, "Completed"] ); // custom status text
 result( 200, { data } );      // with some data
 ```
 
-## Properties
-
 ### ok
 
-Returns `true` if result is successful, otherwise returns `false`.
+-   <boolean\> Returns `true` if result is successful, otherwise returns `false`.
 
 ### status
 
-Integer status code.
+-   <integer\> Status code.
 
 ### statusText
 
-Status text.
+-   <string\> Status text.
 
-## Methods
+### error
+
+-   <boolean\> Return `true` if result is error.
+
+### is1xx
+
+-   <boolean\> Return `true` if result code in range `100` - `199`.
+
+### is2xx
+
+-   <boolean\> Return `true` if result code in range `200` - `299`.
+
+### is3xx
+
+-   <boolean\> Return `true` if result code in range `300` - `399`.
+
+### is4xx
+
+-   <boolean\> Return `true` if result code in range `400` - `499`.
+
+### is5xx
+
+-   <boolean\> Return `true` if result code >= `500`.
 
 ### result( status, data, properties )
 
