@@ -140,6 +140,14 @@ Resolves status text by the status code.
 
 -   <boolean\> Return `true` if result code >= `500`.
 
+#### result.toString()
+
+-   Returns: <string\>
+
+#### result.toJSON()
+
+-   Returns: <string\>
+
 #### result.toRPC( id )
 
 -   `id` <integer\> JSON RPC message id.
