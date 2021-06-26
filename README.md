@@ -27,6 +27,27 @@ result( [200, "Completed"] ); // custom status text
 result( 200, { data } );      // with some data
 ```
 
+### result( status, data, properties )
+
+-   `status` <integer\> | <Array\> status code or <Array\> status code, status text.
+-   `data?` <any\> arbitrary data that represents returned value. this data is accesible via `result.data` property.
+-   `properties?` <Object\> additional meta properties, that will be stored in the result object.
+
+creates new result object.
+
+example:
+
+<!-- prettier-ignore -->
+```javascript
+const res = result( 500, { a: 1 }, { meta: "some data" } );
+
+console.log( res.ok );         // false
+console.log( res.status );     // 500
+console.log( res.statustext ); // internal server error
+console.log( res.data );       // {"a": 1}
+console.log( res.meta );       // "some data"
+```
+
 ### status
 
 -   <integer\> Status code.
@@ -34,6 +55,10 @@ result( 200, { data } );      // with some data
 ### statusText
 
 -   <string\> Status text.
+
+### exception
+
+-   <boolean\> Return `true` if result is exception.
 
 ### ok
 
@@ -62,27 +87,6 @@ result( 200, { data } );      // with some data
 ### is5xx
 
 -   <boolean\> Return `true` if result code >= `500`.
-
-### result( status, data, properties )
-
--   `status` <integer\> | <Array\> Status code or <Array\> status code, status text.
--   `data?` <any\> Arbitrary data that represents returned value. This data is accesible via `result.data` property.
--   `properties?` <Object\> Additional meta properties, that will be stored in the result object.
-
-Creates new result object.
-
-Example:
-
-<!-- prettier-ignore -->
-```javascript
-const res = result( 500, { a: 1 }, { meta: "some data" } );
-
-console.log( res.ok );         // false
-console.log( res.status );     // 500
-console.log( res.statusText ); // Internal Server Error
-console.log( res.data );       // {"a": 1}
-console.log( res.meta );       // "some data"
-```
 
 ### toRPC( id )
 
