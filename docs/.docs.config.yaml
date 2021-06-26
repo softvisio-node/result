@@ -1,1 +1,4 @@
 logo: false
+
+types:
+  Result: "/#Class: Result"

@@ -29,13 +29,14 @@ result( 200, { data } );      // with some data
 
 ### result( status, data, properties )
 
--   `status` <integer\> | <Array\> status code or <Array\> status code, status text.
--   `data?` <any\> arbitrary data that represents returned value. this data is accesible via `result.data` property.
--   `properties?` <Object\> additional meta properties, that will be stored in the result object.
+-   `status` <integer\> | <Array\> Status code or <Array\> [status code, status text].
+-   `data?` <any\> arbitrary Data that represents returned value. This data is accesible via `result.data` property.
+-   `properties?` <Object\> Additional meta properties, that will be stored in the result object.
+-   Return: <Result\>
 
-creates new result object.
+Creates new result object.
 
-example:
+Example:
 
 <!-- prettier-ignore -->
 ```javascript
@@ -48,47 +49,49 @@ console.log( res.data );       // {"a": 1}
 console.log( res.meta );       // "some data"
 ```
 
-### status
+### Class: Result
+
+#### result.status
 
 -   <integer\> Status code.
 
-### statusText
+#### result.statusText
 
 -   <string\> Status text.
 
-### exception
+#### result.exception
 
 -   <boolean\> Return `true` if result is exception.
 
-### ok
+#### result.ok
 
 -   <boolean\> Returns `true` if result is successful, otherwise returns `false`.
 
-### error
+#### result.error
 
 -   <boolean\> Return `true` if result is error.
 
-### is1xx
+#### result.is1xx
 
 -   <boolean\> Return `true` if result code in range `100` - `199`.
 
-### is2xx
+#### result.is2xx
 
 -   <boolean\> Return `true` if result code in range `200` - `299`.
 
-### is3xx
+#### result.is3xx
 
 -   <boolean\> Return `true` if result code in range `300` - `399`.
 
-### is4xx
+#### result.is4xx
 
 -   <boolean\> Return `true` if result code in range `400` - `499`.
 
-### is5xx
+#### result.is5xx
 
 -   <boolean\> Return `true` if result code >= `500`.
 
-### toRPC( id )
+#### result.toRPC( id )
 
 -   `id` <integer\> JSON RPC message id.
 -   Return: <Object\> JSON RPC response.
