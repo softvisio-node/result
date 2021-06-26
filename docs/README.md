@@ -45,6 +45,20 @@ console.log( res.data );       // {"a": 1}
 console.log( res.meta );       // "some data"
 ```
 
+### result.exception( status, data, properties )
+
+### result.try( res )
+
+### result.catch( res )
+
+### result.parse( res )
+
+### result.parseRPC( res )
+
+### result.getHTTPStatus( status )
+
+### result.getStatusText( status )
+
 ### Class: Result
 
 #### result.status
@@ -69,19 +83,19 @@ console.log( res.meta );       // "some data"
 
 #### result.is1xx
 
--   <boolean\> Return `true` if result code in range `100` - `199`.
+-   <boolean\> Return `true` if result code in range: `100` - `199`.
 
 #### result.is2xx
 
--   <boolean\> Return `true` if result code in range `200` - `299`.
+-   <boolean\> Return `true` if result code in range: `200` - `299`.
 
 #### result.is3xx
 
--   <boolean\> Return `true` if result code in range `300` - `399`.
+-   <boolean\> Return `true` if result code in range: `300` - `399`.
 
 #### result.is4xx
 
--   <boolean\> Return `true` if result code in range `400` - `499`.
+-   <boolean\> Return `true` if result code in range: `400` - `499`.
 
 #### result.is5xx
 
