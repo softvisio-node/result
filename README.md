@@ -53,15 +53,50 @@ console.log( res.meta );       // "some data"
 
 ### result.try( res )
 
+-   `res` <any\>
+-   Returns: <Result\>
+
+Checks, that `res` is instance of <Result\>. If `res` is:
+
+-   <Result\>: returns `res`;
+-   <undefined\>: returns `result( 200 )`;
+-   any other value: returns `result( 500 )`;
+
 ### result.catch( res )
+
+-   `res` <any\>
+-   Returns: <Result\>
+
+Checks, that `res` is instance of <Result\>. If `res` is:
+
+-   <Result\>: returns `res`;
+-   any other value: returns `result( 500 )`;
 
 ### result.parse( res )
 
-### result.parseRPC( res )
+-   `res` <Object\> Result object data, produced by `Result.toJSON()`.
+-   Returns: <Result\>
+
+### result.parseRPC( msg )
+
+-   `msg` <Object\> JSON RPC 2.0 message.
+-   Returns: <Result\>
+
+Converts JSON RPC response message to the <Result\> object.
 
 ### result.getHTTPStatus( status )
 
+-   `status` <integer\> Status code.
+-   Returns: <integer\> Status code.
+
+Returns status code in range, supported by `HTTP` protocol.
+
 ### result.getStatusText( status )
+
+-   `status` <integer\> Status code.
+-   Returns: <string\> Status text.
+
+Resolves status text by the status code.
 
 ### Class: Result
 
