@@ -28,7 +28,7 @@ result( 200, { data } );      // with some data
 -   `status` <integer\> | <Array\> Status code or <Array\> [status code, status text].
 -   `data?` <any\> arbitrary Data that represents returned value. This data is accesible via `result.data` property.
 -   `properties?` <Object\> Additional meta properties, that will be stored in the result object.
--   Return: <Result\>
+-   Returns: <Result\>
 
 Creates new result object.
 
@@ -46,6 +46,13 @@ console.log( res.meta );       // "some data"
 ```
 
 ### result.exception( status, data, properties )
+
+-   `status` <integer\> | <Array\> Status code or <Array\> [status code, status text].
+-   `data?` <any\> arbitrary Data that represents returned value. This data is accesible via `result.data` property.
+-   `properties?` <Object\> Additional meta properties, that will be stored in the result object.
+-   Returns: <Result\>
+
+Creates new result exception object. Same, as [`result( status, data, properties )`](#result-status-data-properties-), but also set `result.exception` to the `true` in case if result is not successuful.
 
 ### result.try( res )
 
@@ -147,6 +154,146 @@ Resolves status text by the status code.
 #### result.toRPC( id )
 
 -   `id` <integer\> JSON RPC message id.
--   Return: <Object\> JSON RPC response.
+-   Returns: <Object\> JSON RPC response.
 
 Converts result object to the JSON RPC response.
+
+## Status codes
+
+### RPC status codes
+
+#### RPC request error
+
+| Status Code | Status Text                                 |
+| ----------: | ------------------------------------------- |
+|      -32800 | RPC calls are not supported                 |
+|      -32801 | Insufficient permissions to call API method |
+|      -32802 | Too many requests                           |
+|      -32803 | Unsupported content type                    |
+|      -32804 | HTTP method not allowed                     |
+|      -32805 | Private API method called                   |
+|      -32806 | Parameters parsing error                    |
+|      -32807 | Unable to decode RPC message body           |
+|      -32808 | Parameters validation error                 |
+|      -32809 | API method not found                        |
+
+#### RPC upload error
+
+| Status Code | Status Text                              |
+| ----------: | ---------------------------------------- |
+|      -32900 | Upload using websockets is not supported |
+|      -32901 | Upload size is required                  |
+|      -32902 | Upload too large                         |
+|      -32903 | API method not support uplads            |
+|      -32904 | API upload method called as RPC          |
+|      -32905 | Upload file is required                  |
+
+### HTTP status codes
+
+#### Informational
+
+| Status Code | Status Text         |
+| ----------: | ------------------- |
+|         100 | Continue            |
+|         101 | Switching Protocols |
+|         102 | Processing          |
+|         103 | Early Hints         |
+
+#### Success
+
+| Status Code | Status Text                   |
+| ----------: | ----------------------------- |
+|         200 | OK                            |
+|         201 | Created                       |
+|         202 | Accepted                      |
+|         203 | Non-Authoritative Information |
+|         204 | No Content                    |
+|         205 | Reset Content                 |
+|         206 | Partial Content               |
+|         207 | Multi-Status                  |
+|         208 | Already Reported              |
+|         226 | IM Used                       |
+
+#### Redirect
+
+| Status Code | Status Text        |
+| ----------: | ------------------ |
+|         300 | Multiple Choices   |
+|         301 | Moved Permanently  |
+|         302 | Found              |
+|         303 | See Other          |
+|         304 | Not Modified       |
+|         305 | Use Proxy          |
+|         307 | Temporary Redirect |
+|         308 | Permanent Redirect |
+
+#### Client error
+
+| Status Code | Status Text                     |
+| ----------: | ------------------------------- |
+|         400 | Bad Request                     |
+|         401 | Unauthorized                    |
+|         402 | Payment Required                |
+|         403 | Forbidden                       |
+|         404 | Not Found                       |
+|         405 | Method Not Allowed              |
+|         406 | Not Acceptable                  |
+|         407 | Proxy Authentication Required   |
+|         408 | Request Timeout                 |
+|         409 | Conflict                        |
+|         410 | Gone                            |
+|         411 | Length Required                 |
+|         412 | Precondition Failed             |
+|         413 | Payload Too Large               |
+|         414 | URI Too Long                    |
+|         415 | Unsupported Media Type          |
+|         416 | Range Not Satisfiable           |
+|         417 | Expectation Failed              |
+|         418 | I'm a Teapot                    |
+|         421 | Misdirected Request             |
+|         422 | Unprocessable Entity            |
+|         423 | Locked                          |
+|         424 | Failed Dependency               |
+|         425 | Too Early                       |
+|         426 | Upgrade Required                |
+|         428 | Precondition Required           |
+|         429 | Too Many Requests               |
+|         431 | Request Header Fields Too Large |
+|         451 | Unavailable For Legal Reasons   |
+
+#### Server error
+
+| Status Code | Status Text                     |
+| ----------: | ------------------------------- |
+|         500 | Internal Server Error           |
+|         501 | Not Implemented                 |
+|         502 | Bad Gateway                     |
+|         503 | Service Unavailable             |
+|         504 | Gateway Timeout                 |
+|         505 | HTTP Version Not Supported      |
+|         506 | Variant Also Negotiates         |
+|         507 | Insufficient Storage            |
+|         508 | Loop Detected                   |
+|         509 | Bandwidth Limit Exceeded        |
+|         510 | Not Extended                    |
+|         511 | Network Authentication Required |
+
+### WebSockets status codes
+
+| Status Code | Status Text                |
+| ----------: | -------------------------- |
+|        1000 | Normal Closure             |
+|        1001 | Going Away                 |
+|        1002 | Protocol error             |
+|        1003 | Unsupported Data           |
+|        1004 | Reserved                   |
+|        1005 | No Status Rcvd             |
+|        1006 | Abnormal Closure           |
+|        1007 | Invalid frame payload data |
+|        1008 | Policy Violation           |
+|        1009 | Message Too Big            |
+|        1010 | Mandatory Ext.             |
+|        1011 | Internal Error             |
+|        1012 | Service Restart            |
+|        1013 | Try Again Later            |
+|        1015 | TLS handshake              |
