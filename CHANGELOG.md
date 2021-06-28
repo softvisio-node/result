@@ -1,5 +1,11 @@
 # Changelog
 
+### 4.1.4 (2021-06-28)
+
+Fixed:
+
+-   docs updated
+
 ### 4.1.3 (2021-06-28)
 
 Fixed:
