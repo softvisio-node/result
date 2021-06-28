@@ -117,7 +117,7 @@ Resolves status text by the status code.
 
 #### result.exception
 
--   <boolean\> Return `true` if result is exception.
+-   <boolean\> Returns `true` if result is exception.
 
 #### result.ok
 
@@ -125,27 +125,27 @@ Resolves status text by the status code.
 
 #### result.error
 
--   <boolean\> Return `true` if result is error.
+-   <boolean\> Returns `true` if result is error.
 
 #### result.is1xx
 
--   <boolean\> Return `true` if result code in range: `100` - `199`.
+-   <boolean\> Returns `true` if result code is in range: `100` - `199`.
 
 #### result.is2xx
 
--   <boolean\> Return `true` if result code in range: `200` - `299`.
+-   <boolean\> Returns `true` if result code is in range: `200` - `299`.
 
 #### result.is3xx
 
--   <boolean\> Return `true` if result code in range: `300` - `399`.
+-   <boolean\> Returns `true` if result code is in range: `300` - `399`.
 
 #### result.is4xx
 
--   <boolean\> Return `true` if result code in range: `400` - `499`.
+-   <boolean\> Returns `true` if result code is in range: `400` - `499`.
 
 #### result.is5xx
 
--   <boolean\> Return `true` if result code >= `500`.
+-   <boolean\> Returns `true` if result code >= `500`.
 
 #### result.toString()
 
@@ -166,7 +166,7 @@ Converts result object to the JSON RPC response.
 
 ### RPC status codes
 
-#### RPC request error
+#### RPC request errors
 
 | Status Code | Status Text                                 |
 | ----------: | ------------------------------------------- |
@@ -181,7 +181,7 @@ Converts result object to the JSON RPC response.
 |      -32808 | Parameters validation error                 |
 |      -32809 | API method not found                        |
 
-#### RPC upload error
+#### RPC upload errors
 
 | Status Code | Status Text                              |
 | ----------: | ---------------------------------------- |
