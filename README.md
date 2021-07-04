@@ -301,3 +301,4 @@ Converts result object to the JSON RPC response.
 |        1012 | Service Restart            |
 |        1013 | Try Again Later            |
 |        1015 | TLS handshake              |
+|        1100 | Signed Out                 |

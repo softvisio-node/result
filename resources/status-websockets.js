@@ -14,4 +14,7 @@ export default {
     "1012": "Service Restart",
     "1013": "Try Again Later",
     "1015": "TLS handshake",
+
+    // custom websockets statuses
+    "1100": "Signed Out",
 };
