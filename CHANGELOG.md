@@ -1,5 +1,12 @@
 # Changelog
 
+### 4.1.6 (2021-07-04)
+
+Changed:
+
+-   websockets statuses updated
+-   docs updated
+
 ### 4.1.5 (2021-06-28)
 
 Fixed:
