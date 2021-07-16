@@ -24,6 +24,9 @@
             "node": "./lib/index.js"
         }
     },
+    "dependencies": {
+        "@softvisio/utils": "^1.3.0"
+    },
     "engines": {
         "node": ">=16.0.0",
         "npm": ">=7.10.0"
