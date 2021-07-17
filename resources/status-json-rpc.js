@@ -33,4 +33,5 @@ export default {
     "-32904": [400, "API upload method called as RPC"],
     "-32905": [400, "Upload file is required"],
     "-32906": [400, "Upload file content type is invalid"],
+    "-32907": [400, "Unexpected multipart/form-data field"],
 };
