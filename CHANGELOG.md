@@ -1,5 +1,11 @@
 # Changelog
 
+### 4.3.0 (2021-07-17)
+
+Added:
+
+-   unexpected multipart/form-data field status added
+
 ### 4.2.0 (2021-07-17)
 
 Added:
