@@ -1,5 +1,11 @@
 # Changelog
 
+### 4.2.0 (2021-07-17)
+
+Added:
+
+-   "Upload file content type is invalid" result added
+
 ### 4.1.7 (2021-07-16)
 
 Added:
