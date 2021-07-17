@@ -191,6 +191,7 @@ Converts result object to the JSON RPC response.
 |      -32903 | API method not support uplads            |
 |      -32904 | API upload method called as RPC          |
 |      -32905 | Upload file is required                  |
+|      -32906 | Upload file content type is invalid      |
 
 ### HTTP status codes
 

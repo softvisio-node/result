@@ -32,4 +32,5 @@ export default {
     "-32903": [400, "API method not support uplads"],
     "-32904": [400, "API upload method called as RPC"],
     "-32905": [400, "Upload file is required"],
+    "-32906": [400, "Upload file content type is invalid"],
 };
