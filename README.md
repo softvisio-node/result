@@ -58,9 +58,11 @@ console.log( res.meta );       // "some data"
 
 Creates new result exception object. Same, as [`result( status, data, properties )`](#result-status-data-properties-), but also set `result.exception` to the `true` in case if result is not successuful.
 
-### result.try( res )
+### result.try( res, options )
 
 -   `res` <any\>
+-   `options` <Object\>:
+    -   `keepError` <boolean\> If `res` is instance of <Error\> set error message as result `statusText`.
 -   Returns: <Result\>
 
 Checks, that `res` is instance of <Result\>. If `res` is:
@@ -69,9 +71,12 @@ Checks, that `res` is instance of <Result\>. If `res` is:
 -   <undefined\>: returns `result( 200 )`;
 -   any other value: returns `result( 500 )`;
 
-### result.catch( res )
+### result.catch( res, options )
 
 -   `res` <any\>
+-   `options` <Object\>:
+    -   `keepError` <boolean\> If `res` is instance of <Error\> set error message as result `statusText`.
+    -   `silent` <boolean\> Do not print error to the console.
 -   Returns: <Result\>
 
 Checks, that `res` is instance of <Result\>. If `res` is:
