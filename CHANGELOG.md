@@ -1,5 +1,12 @@
 # Changelog
 
+### 4.4.0 (2021-07-19)
+
+Added:
+
+-   docs updated
+-   result try/catch options added
+
 ### 4.3.0 (2021-07-17)
 
 Added:
