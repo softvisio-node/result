@@ -16,16 +16,25 @@ Under `node` environment it also register itself as `global.result`, so you don;
 ```javascript
 import result from "@softvisio/result";
 
-result(200);
+var res = result( 200 );
 
-result( [200, "Completed"] ); // custom status text
+res = result( [200, "Completed"] ); // custom status text
 
-result( 200, { data } );      // with some data
+res = result( 200, { data } );      // with some data
+
+try {
+    res = result.try( await someFunctionCall() );
+}
+catch (e) {
+    res = result.catch( e );
+}
 ```
 
 ### result( status, data, properties )
 
--   `status` <integer\> | <Array\> Status code or <Array\> [status code, status text].
+-   `status` <integer\> | <Array\> | <Error\> Status code, <Error\> object, result-like object (has `status` and `statusText` properties, for example, `node-fetch` result) or <Array\>:
+    -   <integer\> Status code.
+    -   <string\> Status text.
 -   `data?` <any\> arbitrary Data that represents returned value. This data is accesible via `result.data` property.
 -   `properties?` <Object\> Additional meta properties, that will be stored in the result object.
 -   Returns: <Result\>
@@ -58,14 +67,16 @@ Creates new result exception object. Same, as [`result( status, data, properties
 
 -   `res` <any\>
 -   `options` <Object\>:
-    -   `keepError` <boolean\> If `res` is instance of <Error\> set error message as result `statusText`.
+    -   `keepError` <boolean\> If `res` is instance of the <Error\> set error message as result `statusText`.
 -   Returns: <Result\>
 
 Checks, that `res` is instance of <Result\>. If `res` is:
 
--   <Result\>: returns `res`;
--   <undefined\>: returns `result( 200 )`;
--   any other value: returns `result( 500 )`;
+-   <undefined\>: returns `result( 200 )`.
+-   <Result\>: returns `res` as is.
+-   Result-like object (object, ehat has `status` and `statusText` properties): returns `result( [res.status, res.statusText] )`.
+-   <Error\>: returns `result( [500, error.message] )`.
+-   Any other value: returns `result( 500 )`.
 
 ### result.catch( res, options )
 
@@ -77,8 +88,10 @@ Checks, that `res` is instance of <Result\>. If `res` is:
 
 Checks, that `res` is instance of <Result\>. If `res` is:
 
--   <Result\>: returns `res`;
--   any other value: returns `result( 500 )`;
+-   <Result\>: returns `res` as is;
+-   Result-like object (object, ehat has `status` and `statusText` properties): returns `result( [res.status, res.statusText] )`.
+-   <Error\>: returns `result( [500, error.message] )`.
+-   Any other value converted to the <Error\> object (`Error( res )`) and processed as described above.
 
 ### result.parse( res )
 
