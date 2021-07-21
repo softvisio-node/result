@@ -1,5 +1,12 @@
 # Changelog
 
+### 4.5.0 (2021-07-21)
+
+Added:
+
+-   docs updated
+-   support for the Error object added to the set status
+
 ### 4.4.0 (2021-07-19)
 
 Added:
