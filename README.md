@@ -34,7 +34,7 @@ catch (e) {
 }
 ```
 
-### result( status, data, properties )
+### result( status, data?, properties? )
 
 -   `status` <integer\> | <Array\> | <Error\> Status code, <Error\> object, result-like object (has `status` and `statusText` properties, for example, `node-fetch` result) or <Array\>:
     -   <integer\> Status code.
@@ -58,7 +58,7 @@ console.log( res.data );       // {"a": 1}
 console.log( res.meta );       // "some data"
 ```
 
-### result.exception( status, data, properties )
+### result.exception( status, data?, properties? )
 
 -   `status` <integer\> | <Array\> Status code or <Array\> [status code, status text].
 -   `data?` <any\> arbitrary Data that represents returned value. This data is accesible via `result.data` property.
@@ -67,10 +67,10 @@ console.log( res.meta );       // "some data"
 
 Creates new result exception object. Same, as [`result( status, data, properties )`](#result-status-data-properties-), but also set `result.exception` to the `true` in case if result is not successuful.
 
-### result.try( res, options )
+### result.try( res?, options? )
 
--   `res` <any\>
--   `options` <Object\>:
+-   `res?` <any\> Value to check.
+-   `options?` <Object\>:
     -   `keepError` <boolean\> If `res` is instance of the <Error\> set error message as result `statusText`.
 -   Returns: <Result\>
 
@@ -78,14 +78,14 @@ Checks, that `res` is instance of <Result\>. If `res` is:
 
 -   <undefined\>: returns `result( 200 )`.
 -   <Result\>: returns `res` as is.
--   Result-like object (object, ehat has `status` and `statusText` properties): returns `result( [res.status, res.statusText] )`.
+-   Result-like object (object, that has `status` and `statusText` properties): returns `result( [res.status, res.statusText] )`.
 -   <Error\>: returns `result( [500, error.message] )`.
 -   Any other value: returns `result( 500 )`.
 
-### result.catch( res, options )
+### result.catch( res, options? )
 
--   `res` <any\>
--   `options` <Object\>:
+-   `res` <any\> Value to check.
+-   `options?` <Object\>:
     -   `keepError` <boolean\> If `res` is instance of <Error\> set error message as result `statusText`.
     -   `silent` <boolean\> Do not print error to the console.
 -   Returns: <Result\>
@@ -93,7 +93,7 @@ Checks, that `res` is instance of <Result\>. If `res` is:
 Checks, that `res` is instance of <Result\>. If `res` is:
 
 -   <Result\>: returns `res` as is;
--   Result-like object (object, ehat has `status` and `statusText` properties): returns `result( [res.status, res.statusText] )`.
+-   Result-like object (object, that has `status` and `statusText` properties): returns `result( [res.status, res.statusText] )`.
 -   <Error\>: returns `result( [500, error.message] )`.
 -   Any other value converted to the <Error\> object (`Error( res )`) and processed as described above.
 
