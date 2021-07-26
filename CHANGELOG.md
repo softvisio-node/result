@@ -1,5 +1,11 @@
 # Changelog
 
+### 4.5.2 (2021-07-26)
+
+Fixed:
+
+-   RPC parser fixed
+
 ### 4.5.1 (2021-07-22)
 
 Fixed:
