@@ -6,15 +6,16 @@ export default {
     "1004": "Reserved",
     "1005": "No Status Rcvd",
     "1006": "Abnormal Closure",
-    "1007": "Invalid frame payload data",
+    "1007": "Invalid Payload",
     "1008": "Policy Violation",
     "1009": "Message Too Big",
-    "1010": "Mandatory Ext.",
+    "1010": "Mandatory Extension",
     "1011": "Internal Error",
     "1012": "Service Restart",
     "1013": "Try Again Later",
-    "1015": "TLS handshake",
+    "1014": "Bad Gateway",
+    "1015": "TLS Handshake",
 
     // custom websockets statuses
-    "1100": "Signed Out",
+    "4000": "Signed Out",
 };
