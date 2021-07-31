@@ -1,5 +1,11 @@
 # Changelog
 
+### 4.5.4 (2021-07-31)
+
+Fixed:
+
+-   deps updated
+
 ### 4.5.3 (2021-07-29)
 
 Fixed:
