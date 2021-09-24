@@ -30,13 +30,13 @@ catch (e) {
 }
 ```
 
-### result( status, data?, properties? )
+### result( status, data?, meta? )
 
 -   `status` <integer\> | <Array\> | <Error\> Status code, <Error\> object, result-like object (has `status` and `statusText` properties, for example, `node-fetch` result) or <Array\>:
     -   <integer\> Status code.
     -   <string\> Status text.
 -   `data?` <any\> arbitrary Data that represents returned value. This data is accesible via `result.data` property.
--   `properties?` <Object\> Additional meta properties, that will be stored in the result object.
+-   `meta?` <Object\> Additional meta properties, that will be stored in the result object.
 -   Returns: <Result\>
 
 Creates new result object.
@@ -54,11 +54,11 @@ console.log( res.data );       // {"a": 1}
 console.log( res.meta );       // "some data"
 ```
 
-### result.exception( status, data?, properties? )
+### result.exception( status, data?, meta? )
 
 -   `status` <integer\> | <Array\> Status code or <Array\> [status code, status text].
 -   `data?` <any\> arbitrary Data that represents returned value. This data is accesible via `result.data` property.
--   `properties?` <Object\> Additional meta properties, that will be stored in the result object.
+-   `meta?` <Object\> Additional meta properties, that will be stored in the result object.
 -   Returns: <Result\>
 
 Creates new result exception object. Same, as [`result( status, data, properties )`](#result-status-data-properties-), but also set `result.exception` to the `true` in case if result is not successuful.
