@@ -1,5 +1,15 @@
 # Changelog
 
+### 5.0.0 (2021-09-24)
+
+Breaking changes:
+
+-   feat!: meta property
+
+Migration:
+
+-   All additional properties moved to the `mata` property.
+
 ### 4.5.4 (2021-07-31)
 
 Fixed:
