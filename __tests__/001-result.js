@@ -8,6 +8,7 @@ test( "1", () => {
         "status_text": "OK",
         "exception": false,
         "data": undefined,
+        "meta": undefined,
     } );
 } );
 
@@ -19,8 +20,10 @@ test( "2", () => {
         "status_text": "OK",
         "exception": false,
         "data": "data",
-        "a": 1,
-        "b": 2,
+        "meta": {
+            "a": 1,
+            "b": 2,
+        },
     } );
 } );
 
@@ -32,6 +35,7 @@ test( "3", () => {
         "status_text": "OK",
         "exception": false,
         "data": undefined,
+        "meta": undefined,
     } );
 } );
 
@@ -43,6 +47,7 @@ test( "4", () => {
         "status_text": "message",
         "exception": false,
         "data": undefined,
+        "meta": undefined,
     } );
 } );
 
@@ -54,6 +59,7 @@ test( "5", () => {
         "status_text": "OK",
         "exception": false,
         "data": undefined,
+        "meta": undefined,
     } );
 } );
 
@@ -67,5 +73,6 @@ test( "6", () => {
         "status_text": "message",
         "exception": false,
         "data": undefined,
+        "meta": undefined,
     } );
 } );
