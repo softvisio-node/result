@@ -1,5 +1,11 @@
 # Changelog
 
+### 5.1.0 (2021-09-25)
+
+Features:
+
+-   feat: result.try allowUndefined option added
+
 ### 5.0.0 (2021-09-24)
 
 Breaking changes:
