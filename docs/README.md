@@ -67,6 +67,7 @@ Creates new result exception object. Same, as [`result( status, data, properties
 
 -   `res?` <any\> Value to check.
 -   `options?` <Object\>:
+    -   `allowUndefined` <boolean> Returns error if set to `false`. **Default:** `true`.
     -   `keepError` <boolean\> If `res` is instance of the <Error\> set error message as result `statusText`.
 -   Returns: <Result\>
 
