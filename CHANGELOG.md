@@ -1,5 +1,11 @@
 # Changelog
 
+### 5.1.1 (2021-09-30)
+
+Fixes:
+
+-   fix: config files renamed
+
 ### 5.1.0 (2021-09-25)
 
 Features:
