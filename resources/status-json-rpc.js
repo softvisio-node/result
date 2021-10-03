@@ -24,6 +24,7 @@ export default {
     "-32807": [400, "Unable to decode RPC message body"],
     "-32808": [400, "Parameters validation error"],
     "-32809": [404, "API method not found"],
+    "-32810": [400, "Persistent connection is required to call API method"],
 
     // custom upload errors
     "-32900": [400, "Upload using websockets is not supported"],
