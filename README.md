@@ -103,14 +103,14 @@ Checks, that `res` is instance of <Result\>. If `res` is:
 -   `res` <Object\> Result object data, produced by `Result.toJSON()`.
 -   Returns: <Result\>
 
-### result.parseRPC( msg )
+### result.parseRpc( msg )
 
 -   `msg` <Object\> JSON RPC 2.0 message.
 -   Returns: <Result\>
 
 Converts JSON RPC response message to the <Result\> object.
 
-### result.getHTTPStatus( status )
+### result.getHttpStatus( status )
 
 -   `status` <integer\> Status code.
 -   Returns: <integer\> Status code.
@@ -174,7 +174,7 @@ Resolves status text by the status code.
 
 -   Returns: <string\>
 
-#### result.toRPC( id )
+#### result.toRpc( id )
 
 -   `id` <integer\> JSON RPC message id.
 -   Returns: <Object\> JSON RPC response.
