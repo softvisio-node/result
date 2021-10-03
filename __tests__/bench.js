@@ -1,16 +1,16 @@
 import "#lib/index";
 
 const t = {
-    status_only () {
+    statusOnly () {
         return result( 200 );
     },
-    status_text () {
+    statusText () {
         return result( [200, "Message"] );
     },
-    status_text_data () {
+    statusTextData () {
         return result( [200, "Message"], { "a": 1 } );
     },
-    status_text_data_props () {
+    statusTextDataProps () {
         return result( [200, "Message"], { "a": 1 }, { "a": 1, "b": 2 } );
     },
 };
