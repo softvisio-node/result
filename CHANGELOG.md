@@ -1,5 +1,11 @@
 # Changelog
 
+### 5.2.0 (2021-10-04)
+
+Features:
+
+-   feat: status -32810 added, persistent connection is required to call API method
+
 ### 5.1.1 (2021-09-30)
 
 Fixes:
