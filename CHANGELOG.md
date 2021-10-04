@@ -1,5 +1,11 @@
 # Changelog
 
+### 5.2.1 (2021-10-04)
+
+Fixes:
+
+-   fix: status text serialized to camel case
+
 ### 5.2.0 (2021-10-04)
 
 Features:
