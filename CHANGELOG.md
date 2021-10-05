@@ -1,5 +1,11 @@
 # Changelog
 
+### 5.2.2 (2021-10-05)
+
+Fixes:
+
+-   fix: camel case serialization reverted
+
 ### 5.2.1 (2021-10-04)
 
 Fixes:
