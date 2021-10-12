@@ -1,5 +1,11 @@
 # Changelog
 
+### 5.3.0 (2021-10-12)
+
+Features:
+
+-   feat: status -32811 Binary protocol is required to call API method
+
 ### 5.2.2 (2021-10-05)
 
 Fixes:
