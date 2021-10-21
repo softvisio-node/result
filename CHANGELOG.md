@@ -1,5 +1,11 @@
 # Changelog
 
+### 5.3.1 (2021-10-21)
+
+Fixes:
+
+-   fix: result.try allowUndefined false by default
+
 ### 5.3.0 (2021-10-12)
 
 Features:
