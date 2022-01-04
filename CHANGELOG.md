@@ -1,5 +1,9 @@
 # Changelog
 
+### 5.3.2 (2022-01-04)
+
+No notable changes since the previous release.
+
 ### 5.3.1 (2021-10-21)
 
 Fixes:
