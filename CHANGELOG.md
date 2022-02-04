@@ -1,5 +1,11 @@
 # Changelog
 
+### 5.3.3 (2022-02-04)
+
+Fixes:
+
+-   fix: append stack on error
+
 ### 5.3.2 (2022-01-04)
 
 No notable changes since the previous release.
