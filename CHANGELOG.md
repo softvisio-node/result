@@ -1,5 +1,11 @@
 # Changelog
 
+### 5.4.0 (2022-02-05)
+
+Features:
+
+-   feat: websocket statuses for authentication errors
+
 ### 5.3.3 (2022-02-04)
 
 Fixes:
