@@ -1,5 +1,11 @@
 # Changelog
 
+### 5.4.1 (2022-02-06)
+
+Fixes:
+
+-   fix: -32811 message
+
 ### 5.4.0 (2022-02-05)
 
 Features:
