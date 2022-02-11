@@ -1,5 +1,11 @@
 # Changelog
 
+### 5.4.2 (2022-02-11)
+
+Fixes:
+
+-   fix: make global.result immutable
+
 ### 5.4.1 (2022-02-06)
 
 Fixes:
