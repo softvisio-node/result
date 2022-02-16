@@ -1,5 +1,11 @@
 # Changelog
 
+### 5.4.3 (2022-02-16)
+
+Fixes:
+
+-   fix: global result registration
+
 ### 5.4.2 (2022-02-11)
 
 Fixes:
