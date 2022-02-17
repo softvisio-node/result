@@ -24,7 +24,6 @@ export default {
     "-32808": [400, "Arguments validation error"],
     "-32809": [404, "API method not found"],
     "-32810": [400, "Persistent connection is required to call API method"],
-    "-32811": [400, "Invalid API method call protocol"],
 
     // custom upload errors
     "-32900": [400, "Upload using websockets is not supported"],
