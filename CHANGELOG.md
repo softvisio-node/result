@@ -1,5 +1,11 @@
 # Changelog
 
+### 5.4.4 (2022-02-17)
+
+Fixes:
+
+-   fix: rpc serialize meta on error
+
 ### 5.4.3 (2022-02-16)
 
 Fixes:
