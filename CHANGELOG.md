@@ -1,5 +1,12 @@
 # Changelog
 
+### 5.4.5 (2022-02-17)
+
+Fixes:
+
+-   fix: statis -32806 removed
+-   fix: status -32811 removed
+
 ### 5.4.4 (2022-02-17)
 
 Fixes:
