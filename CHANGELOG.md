@@ -1,5 +1,11 @@
 # Changelog
 
+### 5.5.0 (2022-07-28)
+
+Features:
+
+-   feat: object permission error
+
 ### 5.4.6 (2022-02-21)
 
 Fixes:
