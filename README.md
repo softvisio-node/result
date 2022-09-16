@@ -187,21 +187,21 @@ Converts result object to the JSON RPC response.
 
 #### RPC request errors
 
-| Status Code | Status Text                                                             |
-| ----------: | ----------------------------------------------------------------------- |
-|      -32800 | RPC calls are not supported                                             |
-|      -32801 | Insufficient permissions to call API method                             |
-|      -32802 | Too many requests                                                       |
-|      -32803 | Unsupported content type                                                |
-|      -32804 | HTTP method not allowed                                                 |
-|      -32805 | Private API method called                                               |
-|      -32806 | Parameters parsing error                                                |
-|      -32807 | Unable to decode RPC message body                                       |
-|      -32808 | Parameters validation error                                             |
-|      -32809 | API method not found                                                    |
-|      -32810 | Persistent connection is required to call API method                    |
-|      -32811 | Insufficient permissions to perform required operation on rarget object |
-|      -32812 | Trusted session is required                                             |
+| Status Code | Status Text                                          |
+| ----------: | ---------------------------------------------------- |
+|      -32800 | RPC calls are not supported                          |
+|      -32801 | Insufficient permissions to call API method          |
+|      -32802 | Too many requests                                    |
+|      -32803 | Unsupported content type                             |
+|      -32804 | HTTP method not allowed                              |
+|      -32805 | Private API method called                            |
+|      -32806 | Parameters parsing error                             |
+|      -32807 | Unable to decode RPC message body                    |
+|      -32808 | Parameters validation error                          |
+|      -32809 | API method not found                                 |
+|      -32810 | Persistent connection is required to call API method |
+|      -32811 | Insufficient permissions                             |
+|      -32812 | Authorization is required                            |
 
 #### RPC upload errors
 
