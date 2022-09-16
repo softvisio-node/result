@@ -25,6 +25,7 @@ export default {
     "-32809": [404, "API method not found"],
     "-32810": [400, "Persistent connection is required to call API method"],
     "-32811": [401, "Insufficient permissions to perform required operation on rarget object"],
+    "-32812": [401, "Trusted session is required"],
 
     // custom upload errors
     "-32900": [400, "Upload using websockets is not supported"],
