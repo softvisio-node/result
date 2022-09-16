@@ -1,5 +1,11 @@
 # Changelog
 
+### 5.6.1 (2022-09-16)
+
+Fixes:
+
+-   fix: status text
+
 ### 5.6.0 (2022-09-16)
 
 Features:
