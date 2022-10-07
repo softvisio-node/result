@@ -1,5 +1,12 @@
 # Changelog
 
+### 5.6.2 (2022-10-07)
+
+Fixes:
+
+-   fix: stack trace
+-   fix: static methods options
+
 ### 5.6.1 (2022-09-16)
 
 Fixes:
