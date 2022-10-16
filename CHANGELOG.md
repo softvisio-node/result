@@ -1,5 +1,11 @@
 # Changelog
 
+### 5.6.3 (2022-10-16)
+
+Fixes:
+
+-   fix: upload statuses
+
 ### 5.6.2 (2022-10-07)
 
 Fixes:
