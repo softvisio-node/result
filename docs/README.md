@@ -204,13 +204,8 @@ Converts result object to the JSON RPC response.
 | Status Code | Status Text                              |
 | ----------: | ---------------------------------------- |
 |      -32900 | Upload using websockets is not supported |
-|      -32901 | Upload size is required                  |
-|      -32902 | Upload too large                         |
 |      -32903 | API method not support uplads            |
 |      -32904 | API upload method called as RPC          |
-|      -32905 | Upload file is required                  |
-|      -32906 | Upload file content type is invalid      |
-|      -32907 | Unexpected multipart/form-data field     |
 
 ### HTTP status codes
 

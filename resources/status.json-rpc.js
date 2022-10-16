@@ -29,11 +29,6 @@ export default {
 
     // custom upload errors
     "-32900": [400, "Upload using websockets is not supported"],
-    "-32901": [411, "Upload size is required"],
-    "-32902": [413, "Upload too large"],
     "-32903": [400, "API method not support uplads"],
     "-32904": [400, "API upload method called as RPC"],
-    "-32905": [400, "Upload file is required"],
-    "-32906": [400, "Upload file content type is invalid"],
-    "-32907": [400, "Unexpected multipart/form-data field"],
 };
