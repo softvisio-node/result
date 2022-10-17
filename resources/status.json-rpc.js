@@ -26,9 +26,4 @@ export default {
     "-32810": [400, "Persistent connection is required to call API method"],
     "-32811": [401, "Insufficient permissions"],
     "-32812": [401, "Authorization is required"],
-
-    // custom upload errors
-    "-32900": [400, "Upload using websockets is not supported"],
-    "-32903": [400, "API method not support uplads"],
-    "-32904": [400, "API upload method called as RPC"],
 };
