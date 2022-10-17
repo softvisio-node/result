@@ -203,14 +203,6 @@ Converts result object to the JSON RPC response.
 |      -32811 | Insufficient permissions                             |
 |      -32812 | Authorization is required                            |
 
-#### RPC upload errors
-
-| Status Code | Status Text                              |
-| ----------: | ---------------------------------------- |
-|      -32900 | Upload using websockets is not supported |
-|      -32903 | API method not support uplads            |
-|      -32904 | API upload method called as RPC          |
-
 ### HTTP status codes
 
 #### Informational
