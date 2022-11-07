@@ -190,12 +190,10 @@ Converts result object to the JSON RPC response.
 | Status Code | Status Text                                          |
 | ----------: | ---------------------------------------------------- |
 |      -32800 | RPC calls are not supported                          |
-|      -32801 | Insufficient permissions to call API method          |
 |      -32802 | Too many requests                                    |
 |      -32803 | Unsupported content type                             |
 |      -32804 | HTTP method not allowed                              |
 |      -32805 | Private API method called                            |
-|      -32806 | Parameters parsing error                             |
 |      -32807 | Unable to decode RPC message body                    |
 |      -32808 | Parameters validation error                          |
 |      -32809 | API method not found                                 |
@@ -313,4 +311,4 @@ Converts result object to the JSON RPC response.
 |        1013 | Try Again Later     |
 |        1014 | Bad Gateway         |
 |        1015 | TLS Handshake       |
-|        4000 | Signed Out          |
+|        4401 | Unauthorized        |

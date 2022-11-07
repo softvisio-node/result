@@ -1,5 +1,11 @@
 # Changelog
 
+### 5.6.5 (2022-11-07)
+
+Fixes:
+
+-   fix: statuses
+
 ### 5.6.4 (2022-10-17)
 
 Fixes:
