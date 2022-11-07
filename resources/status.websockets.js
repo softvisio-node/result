@@ -17,7 +17,5 @@ export default {
     "1015": "TLS Handshake",
 
     // custom websockets statuses
-    "4000": "Signed Out",
-    "4401": "API token is invalid",
-    "4503": "API backend is not available", // when api backend is down
+    "4401": "Unauthorized",
 };

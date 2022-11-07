@@ -15,7 +15,6 @@ export default {
 
     // custom common errors
     "-32800": [400, "RPC calls are not supported"],
-    "-32801": [401, "Insufficient permissions to call API method"],
     "-32802": [429, "Too many requests"],
     "-32803": [415, "Unsupported content type"],
     "-32804": [405, "HTTP method not allowed"],
