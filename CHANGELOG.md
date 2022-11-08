@@ -1,5 +1,11 @@
 # Changelog
 
+### 5.6.6 (2022-11-08)
+
+Fixes:
+
+-   fix: rpc statuses
+
 ### 5.6.5 (2022-11-07)
 
 Fixes:
