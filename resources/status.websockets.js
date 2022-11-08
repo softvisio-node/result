@@ -15,7 +15,4 @@ export default {
     "1013": "Try Again Later",
     "1014": "Bad Gateway",
     "1015": "TLS Handshake",
-
-    // custom websockets statuses
-    "4401": "Unauthorized",
 };

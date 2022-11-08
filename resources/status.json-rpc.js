@@ -26,4 +26,6 @@ export default {
     "-32811": [401, "Insufficient permissions"],
     "-32812": [401, "Authorization is required"],
     "-32813": [401, "Context is disabled"],
+    "-32814": [503, "Backend is down"],
+    "-32815": [491, "Context deleted"],
 };

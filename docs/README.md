@@ -197,6 +197,8 @@ Converts result object to the JSON RPC response.
 |      -32811 | Insufficient permissions                             |
 |      -32812 | Authorization is required                            |
 |      -32813 | Context is disabled                                  |
+|      -32814 | Backend is down                                      |
+|      -32815 | Context deleted                                      |
 
 ### HTTP status codes
 
@@ -308,4 +310,3 @@ Converts result object to the JSON RPC response.
 |        1013 | Try Again Later     |
 |        1014 | Bad Gateway         |
 |        1015 | TLS Handshake       |
-|        4401 | Unauthorized        |
