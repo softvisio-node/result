@@ -200,9 +200,9 @@ Converts result object to the JSON RPC response.
 |      -32810 | Persistent connection is required to call API method |
 |      -32811 | Insufficient permissions                             |
 |      -32812 | Authorization is required                            |
-|      -32813 | Context is disabled                                  |
+|      -32813 | Session is disabled                                  |
 |      -32814 | Backend is down                                      |
-|      -32815 | Context deleted                                      |
+|      -32815 | Session was deleted                                  |
 
 ### HTTP status codes
 

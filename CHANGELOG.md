@@ -1,5 +1,11 @@
 # Changelog
 
+### 5.6.8 (2022-11-09)
+
+Fixes:
+
+-   fix: statuses text
+
 ### 5.6.7 (2022-11-08)
 
 Fixes:
