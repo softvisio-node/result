@@ -25,7 +25,7 @@ export default {
     "-32810": [400, "Persistent connection is required to call API method"],
     "-32811": [401, "Insufficient permissions"],
     "-32812": [401, "Authorization is required"],
-    "-32813": [401, "Context is disabled"],
+    "-32813": [401, "Session is disabled"],
     "-32814": [503, "Backend is down"],
-    "-32815": [401, "Context deleted"],
+    "-32815": [401, "Session was deleted"],
 };
