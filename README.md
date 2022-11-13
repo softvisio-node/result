@@ -193,7 +193,6 @@ Converts result object to the JSON RPC response.
 |      -32802 | Too many requests                                    |
 |      -32803 | Unsupported content type                             |
 |      -32804 | HTTP method not allowed                              |
-|      -32805 | Private API method called                            |
 |      -32807 | Unable to decode RPC message body                    |
 |      -32808 | Parameters validation error                          |
 |      -32809 | API method not found                                 |

@@ -1,5 +1,11 @@
 # Changelog
 
+### 5.6.9 (2022-11-13)
+
+Fixes:
+
+-   fix: private api status removed
+
 ### 5.6.8 (2022-11-09)
 
 Fixes:
