@@ -18,7 +18,6 @@ export default {
     "-32802": [429, "Too many requests"],
     "-32803": [415, "Unsupported content type"],
     "-32804": [405, "HTTP method not allowed"],
-    "-32805": [403, "Private API method called"],
     "-32807": [400, "Unable to decode RPC message body"],
     "-32808": [400, "Arguments validation error"],
     "-32809": [404, "API method not found"],
