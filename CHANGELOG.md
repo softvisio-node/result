@@ -1,5 +1,11 @@
 # Changelog
 
+### 5.6.10 (2023-01-24)
+
+Fixes:
+
+-   fix: git repo relocated
+
 ### 5.6.9 (2022-11-13)
 
 Fixes:
