@@ -1,6 +1,6 @@
 <!-- !!! DO NOT EDIT, THIS FILE IS GENERATED AUTOMATICALLY !!!  -->
 
-> :information_source: Please, see the full project documentation here: [https://softvisio.github.io/result/](https://softvisio.github.io/result/).
+> :information_source: Please, see the full project documentation here: [https://softvisio-node.github.io/result/](https://softvisio-node.github.io/result/).
 
 # Introduction
 

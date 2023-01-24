@@ -2,14 +2,14 @@
     "name": "@softvisio/result",
     "version": "5.6.9",
     "description": "Result object",
-    "homepage": "https://softvisio.github.io/result/",
+    "homepage": "https://softvisio-node.github.io/result/",
     "bugs": {
-        "url": "https://github.com/softvisio/result/issues",
+        "url": "https://github.com/softvisio-node/result/issues",
         "email": "zdm <zdm@softvisio.net>"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/softvisio/result.git"
+        "url": "https://github.com/softvisio-node/result.git"
     },
     "license": "ISC",
     "author": "zdm <zdm@softvisio.net>",
