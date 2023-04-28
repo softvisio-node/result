@@ -5,7 +5,7 @@
 
 export default {
 
-    // don't use standard error codes in api response, create custom code, if needed
+    // NOTE don't use standard error codes in api response, create custom code, if needed
     "-32700": [400, "Parse Error"],
     "-32600": [400, "Invalid Request"],
     "-32601": [404, "Method Not Found"],
@@ -27,4 +27,5 @@ export default {
     "-32813": [401, "Session is disabled"],
     "-32814": [503, "Backend is down"],
     "-32815": [401, "Session was deleted"],
+    "-32816": [503, "Service is shutting down"],
 };
