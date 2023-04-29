@@ -130,7 +130,7 @@ Resolves status text by the status code.
 
 -   <string\> Status text.
 
-#### result.exception
+#### result.isException
 
 -   <boolean\> Returns `true` if result is exception.
 
@@ -198,6 +198,7 @@ Converts result object to the JSON RPC response.
 |      -32813 | Session is disabled                                  |
 |      -32814 | Backend is down                                      |
 |      -32815 | Session was deleted                                  |
+|      -32816 | Service is shutting down                             |
 
 ### HTTP status codes
 
