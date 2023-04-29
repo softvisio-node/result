@@ -1,5 +1,11 @@
 # Changelog
 
+### 6.0.1 (2023-04-29)
+
+Fixes:
+
+-   fix: hide exceptions details from external clients
+
 ### 6.0.0 (2023-04-29)
 
 Breaking changes:
