@@ -1,5 +1,20 @@
 # Changelog
 
+### 6.0.0 (2023-04-29)
+
+Breaking changes:
+
+-   feat!: parse renamed to fromJson
+
+Fixes:
+
+-   fix: exception
+-   fix: json exception
+-   fix: log to console.error
+-   fix: rpc methods
+
+Migration:
+
 ### 5.7.0 (2023-04-28)
 
 Features:
