@@ -94,7 +94,7 @@ Checks, that `res` is instance of <Result\>. If `res` is:
 -   <Error\>: returns `result( [500, error.message] )`.
 -   Any other value converted to the <Error\> object (`Error( res )`) and processed as described above.
 
-### result.parse( res )
+### result.fromJson( res )
 
 -   `res` <Object\> Result object data, produced by `Result.toJSON()`.
 -   Returns: <Result\>
