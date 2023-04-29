@@ -99,7 +99,7 @@ Checks, that `res` is instance of <Result\>. If `res` is:
 -   `res` <Object\> Result object data, produced by `Result.toJSON()`.
 -   Returns: <Result\>
 
-### result.parseRpc( msg )
+### result.fromJsonRpc)
 
 -   `msg` <Object\> JSON RPC 2.0 message.
 -   Returns: <Result\>
@@ -170,7 +170,7 @@ Resolves status text by the status code.
 
 -   Returns: <string\>
 
-#### result.toRpc( id )
+#### result.toJsonRpc( id )
 
 -   `id` <integer\> JSON RPC message id.
 -   Returns: <Object\> JSON RPC response.
