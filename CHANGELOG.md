@@ -1,5 +1,11 @@
 # Changelog
 
+### 6.0.3 (2023-05-07)
+
+Fixes:
+
+-   fix: catch result
+
 ### 6.0.2 (2023-04-29)
 
 Fixes:
