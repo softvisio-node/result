@@ -1,5 +1,11 @@
 # Changelog
 
+### 6.0.4 (2023-05-08)
+
+Fixes:
+
+-   fix: resources renamed
+
 ### 6.0.3 (2023-05-07)
 
 Fixes:
