@@ -1,5 +1,11 @@
 # Changelog
 
+### 6.1.0 (2023-06-26)
+
+Features:
+
+-   feat: api abort call
+
 ### 6.0.5 (2023-06-15)
 
 Fixes:
