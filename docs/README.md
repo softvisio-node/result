@@ -199,6 +199,7 @@ Converts result object to the JSON RPC response.
 |      -32814 | Backend is down                                      |
 |      -32815 | Session was deleted                                  |
 |      -32816 | Service is shutting down                             |
+|      -32817 | Request aborted                                      |
 
 ### HTTP status codes
 

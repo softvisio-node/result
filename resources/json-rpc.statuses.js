@@ -28,4 +28,5 @@ export default {
     "-32814": [503, "Backend is down"],
     "-32815": [401, "Session was deleted"],
     "-32816": [503, "Service is shutting down"],
+    "-32817": [509, "Request aborted"],
 };
