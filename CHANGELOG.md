@@ -1,5 +1,11 @@
 # Changelog
 
+### 6.1.3 (2023-07-11)
+
+Fixes:
+
+-   fix: resources
+
 ### 6.1.2 (2023-07-11)
 
 Fixes:
