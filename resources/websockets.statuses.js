@@ -1,4 +1,4 @@
-module.expoorts = {
+module.exports = {
     "1000": "Normal Closure",
     "1001": "Going Away",
     "1002": "Protocol error",

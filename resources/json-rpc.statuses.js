@@ -3,7 +3,7 @@
 // The error codes are nearly the same as those suggested for
 // XML-RPC at the following url: http://xmlrpc-epi.sourceforge.net/specs/rfc.fault_codes.php
 
-module.expoorts = {
+module.exports = {
 
     // NOTE don't use standard error codes in api response, create custom code, if needed
     "-32700": [400, "Parse Error"],
