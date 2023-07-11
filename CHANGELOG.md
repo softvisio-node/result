@@ -1,5 +1,11 @@
 # Changelog
 
+### 6.1.2 (2023-07-11)
+
+Fixes:
+
+-   fix: ported to the commonjs
+
 ### 6.1.1 (2023-07-06)
 
 Fixes:
