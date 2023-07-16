@@ -1,4 +1,4 @@
-module.exports = {
+export default {
 
     // 1xx
     "100": "Continue",
