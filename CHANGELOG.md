@@ -1,5 +1,11 @@
 # Changelog
 
+### 6.3.0 (2023-07-27)
+
+Features:
+
+-   feat: parse result-like object
+
 ### 6.2.0 (2023-07-27)
 
 Features:
