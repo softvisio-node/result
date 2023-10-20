@@ -1,5 +1,11 @@
 # Changelog
 
+### 6.3.2 (2023-10-20)
+
+Fixes:
+
+-   fix: package repo url
+
 ### 6.3.1 (2023-07-30)
 
 Fixes:
