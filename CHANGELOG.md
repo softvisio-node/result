@@ -1,5 +1,11 @@
 # Changelog
 
+### 6.3.3 (2023-10-23)
+
+Fixes:
+
+-   fix: statis messahe
+
 ### 6.3.2 (2023-10-20)
 
 Fixes:
