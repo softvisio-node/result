@@ -197,7 +197,7 @@ Converts result object to the JSON RPC response.
 |      -32808 | Parameters validation error                          |
 |      -32809 | API method not found                                 |
 |      -32810 | Persistent connection is required to call API method |
-|      -32811 | Insufficient permissions                             |
+|      -32811 | Access denied                                        |
 |      -32812 | Authorization is required                            |
 |      -32813 | Session is disabled                                  |
 |      -32814 | Backend is down                                      |

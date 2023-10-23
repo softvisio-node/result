@@ -22,7 +22,7 @@ export default {
     "-32808": [400, "Arguments validation error"],
     "-32809": [404, "API method not found"],
     "-32810": [400, "Persistent connection is required to call API method"],
-    "-32811": [401, "Insufficient permissions"],
+    "-32811": [401, "Access denied"],
     "-32812": [401, "Authorization is required"],
     "-32813": [401, "Session is disabled"],
     "-32814": [503, "Backend is down"],
