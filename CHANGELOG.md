@@ -1,5 +1,11 @@
 # Changelog
 
+### 6.3.5 (2024-01-24)
+
+Fixes:
+
+-   fix: linted
+
 ### 6.3.4 (2024-01-23)
 
 Fixes:
