@@ -1,5 +1,11 @@
 # Changelog
 
+### 6.3.6 (2024-01-25)
+
+Fixes:
+
+-   fix: result try / catch options
+
 ### 6.3.5 (2024-01-24)
 
 Fixes:
