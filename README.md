@@ -88,7 +88,7 @@ Checks, that `res` is instance of <Result\>. If `res` is:
 -   `res` <any\> Value to check.
 -   `options?` <Object\>:
     -   `keepError` <boolean\> If `res` is instance of <Error\> set error message as result `statusText`.
-    -   `silent` <boolean\> Do not print error to the console.
+    -   `log` <boolean\> Do not print error to the console.
 -   Returns: <Result\>
 
 Checks, that `res` is instance of <Result\>. If `res` is:
