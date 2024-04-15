@@ -1,7 +1,5 @@
 docs:
   location: docs
 
-  logo: false
-
   types:
     Result: "/#Class: Result"
