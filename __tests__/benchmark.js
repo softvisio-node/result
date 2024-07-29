@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import bench from "#core/benchmark";
+import benchmark from "#core/benchmark";
 import "#lib/index";
 
 const t = {
@@ -18,4 +18,6 @@ const t = {
     },
 };
 
-bench( "result", t, 1000000 );
+await benchmark( t, {
+    "iterations": 1000000,
+} );
