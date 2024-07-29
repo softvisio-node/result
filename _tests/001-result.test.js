@@ -1,82 +1,84 @@
 #!/usr/bin/env node
 
-import test from "node:test";
+import { suite, test } from "node:test";
 import assert from "node:assert";
 import "#lib/index";
 
-test( "1", () => {
-    const res = result( 200 );
+suite( "result", () => {
+    test( "1", () => {
+        const res = result( 200 );
 
-    assert.deepStrictEqual( res.toJSON(), {
-        "status": 200,
-        "status_text": "OK",
-        "exception": false,
-        "data": undefined,
-        "meta": undefined,
+        assert.deepStrictEqual( res.toJSON(), {
+            "status": 200,
+            "status_text": "OK",
+            "exception": false,
+            "data": undefined,
+            "meta": undefined,
+        } );
     } );
-} );
 
-test( "2", () => {
-    const res = result( 200, "data", { "a": 1, "b": 2 } );
+    test( "2", () => {
+        const res = result( 200, "data", { "a": 1, "b": 2 } );
 
-    assert.deepStrictEqual( res.toJSON(), {
-        "status": 200,
-        "status_text": "OK",
-        "exception": false,
-        "data": "data",
-        "meta": {
-            "a": 1,
-            "b": 2,
-        },
+        assert.deepStrictEqual( res.toJSON(), {
+            "status": 200,
+            "status_text": "OK",
+            "exception": false,
+            "data": "data",
+            "meta": {
+                "a": 1,
+                "b": 2,
+            },
+        } );
     } );
-} );
 
-test( "3", () => {
-    const res = result( [ 200 ] );
+    test( "3", () => {
+        const res = result( [ 200 ] );
 
-    assert.deepStrictEqual( res.toJSON(), {
-        "status": 200,
-        "status_text": "OK",
-        "exception": false,
-        "data": undefined,
-        "meta": undefined,
+        assert.deepStrictEqual( res.toJSON(), {
+            "status": 200,
+            "status_text": "OK",
+            "exception": false,
+            "data": undefined,
+            "meta": undefined,
+        } );
     } );
-} );
 
-test( "4", () => {
-    const res = result( [ 200, "message" ] );
+    test( "4", () => {
+        const res = result( [ 200, "message" ] );
 
-    assert.deepStrictEqual( res.toJSON(), {
-        "status": 200,
-        "status_text": "message",
-        "exception": false,
-        "data": undefined,
-        "meta": undefined,
+        assert.deepStrictEqual( res.toJSON(), {
+            "status": 200,
+            "status_text": "message",
+            "exception": false,
+            "data": undefined,
+            "meta": undefined,
+        } );
     } );
-} );
 
-test( "5", () => {
-    const res = result( [ 200, false ] );
+    test( "5", () => {
+        const res = result( [ 200, false ] );
 
-    assert.deepStrictEqual( res.toJSON(), {
-        "status": 200,
-        "status_text": "OK",
-        "exception": false,
-        "data": undefined,
-        "meta": undefined,
+        assert.deepStrictEqual( res.toJSON(), {
+            "status": 200,
+            "status_text": "OK",
+            "exception": false,
+            "data": undefined,
+            "meta": undefined,
+        } );
     } );
-} );
 
-test( "6", () => {
-    const _res = result( [ 300, "message" ], "data", { "a": 1, "b": 2 } );
+    test( "6", () => {
+        const _res = result( [ 300, "message" ], "data", { "a": 1, "b": 2 } );
 
-    const res = result( _res );
+        const res = result( _res );
 
-    assert.deepStrictEqual( res.toJSON(), {
-        "status": 300,
-        "status_text": "message",
-        "exception": false,
-        "data": undefined,
-        "meta": undefined,
+        assert.deepStrictEqual( res.toJSON(), {
+            "status": 300,
+            "status_text": "message",
+            "exception": false,
+            "data": undefined,
+            "meta": undefined,
+        } );
     } );
 } );
