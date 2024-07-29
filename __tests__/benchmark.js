@@ -1,3 +1,4 @@
+import bench from "#core/benchmark";
 import "#lib/index";
 
 const t = {
