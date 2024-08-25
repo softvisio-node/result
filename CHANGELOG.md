@@ -1,5 +1,11 @@
 # Changelog
 
+### 6.3.19 (2024-08-25)
+
+Fixes:
+
+-   fix: assert.equal
+
 ### 6.3.18 (2024-08-14)
 
 No notable changes since the previous release.
