@@ -8,7 +8,7 @@ suite( "result", () => {
     test( "1", () => {
         const res = result( 200 );
 
-        assert.deepEqual( res.toJSON(), {
+        assert.deepStrictEqual( res.toJSON(), {
             "status": 200,
             "status_text": "OK",
             "exception": false,
@@ -20,7 +20,7 @@ suite( "result", () => {
     test( "2", () => {
         const res = result( 200, "data", { "a": 1, "b": 2 } );
 
-        assert.deepEqual( res.toJSON(), {
+        assert.deepStrictEqual( res.toJSON(), {
             "status": 200,
             "status_text": "OK",
             "exception": false,
@@ -35,7 +35,7 @@ suite( "result", () => {
     test( "3", () => {
         const res = result( [ 200 ] );
 
-        assert.deepEqual( res.toJSON(), {
+        assert.deepStrictEqual( res.toJSON(), {
             "status": 200,
             "status_text": "OK",
             "exception": false,
@@ -47,7 +47,7 @@ suite( "result", () => {
     test( "4", () => {
         const res = result( [ 200, "message" ] );
 
-        assert.deepEqual( res.toJSON(), {
+        assert.deepStrictEqual( res.toJSON(), {
             "status": 200,
             "status_text": "message",
             "exception": false,
@@ -59,7 +59,7 @@ suite( "result", () => {
     test( "5", () => {
         const res = result( [ 200, false ] );
 
-        assert.deepEqual( res.toJSON(), {
+        assert.deepStrictEqual( res.toJSON(), {
             "status": 200,
             "status_text": "OK",
             "exception": false,
@@ -73,7 +73,7 @@ suite( "result", () => {
 
         const res = result( _res );
 
-        assert.deepEqual( res.toJSON(), {
+        assert.deepStrictEqual( res.toJSON(), {
             "status": 300,
             "status_text": "message",
             "exception": false,
