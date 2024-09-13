@@ -1,5 +1,9 @@
 # Changelog
 
+### 6.3.22 (2024-09-13)
+
+No notable changes since the previous release.
+
 ### 6.3.21 (2024-09-07)
 
 Fixes:
