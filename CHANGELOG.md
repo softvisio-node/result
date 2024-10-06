@@ -1,5 +1,11 @@
 # Changelog
 
+### 6.3.24 (2024-10-06)
+
+Fixes:
+
+-   fix: dependabot
+
 ### 6.3.23 (2024-10-06)
 
 No notable changes since the previous release.
