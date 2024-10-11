@@ -5,7 +5,7 @@ Serializable result object, that encapsulates operation status, statusText and r
 ## Install
 
 ```shell
-npm i @softvisio/result
+npm install @softvisio/result
 ```
 
 Under `node` environment it also register itself as `global.result`, so you don;t need to import it into all modules;

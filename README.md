@@ -1,6 +1,6 @@
 <!-- !!! DO NOT EDIT, THIS FILE IS GENERATED AUTOMATICALLY !!!  -->
 
-> :information_source: Please, see the full project documentation here: [https://softvisio-node.github.io/result/](https://softvisio-node.github.io/result/).
+> :information_source: Please, see the full project documentation here:<br>[https://softvisio-node.github.io/result/](https://softvisio-node.github.io/result/)
 
 # Introduction
 
@@ -9,7 +9,7 @@ Serializable result object, that encapsulates operation status, statusText and r
 ## Install
 
 ```shell
-npm i @softvisio/result
+npm install @softvisio/result
 ```
 
 Under `node` environment it also register itself as `global.result`, so you don;t need to import it into all modules;
