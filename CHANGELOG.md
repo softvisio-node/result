@@ -1,5 +1,13 @@
 # Changelog
 
+### 6.5.0 (2024-10-13)
+
+Features:
+
+-   feat: package test script
+
+[Full list of the changes](https://github.com/softvisio-node/result/compare/v6.4.0...v6.5.0)
+
 ### 6.4.0 (2024-10-13)
 
 Features:
