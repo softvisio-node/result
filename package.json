@@ -29,5 +29,8 @@
         "/lib",
         "/resources",
         "/src"
-    ]
+    ],
+    "scripts": {
+        "test": "node --test _tests/**/*.js"
+    }
 }
