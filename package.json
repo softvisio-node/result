@@ -31,6 +31,6 @@
         "/src"
     ],
     "scripts": {
-        "test": "node --test _tests/**/*.js"
+        "test": "node --test '_tests/**/*.test.js'"
     }
 }
