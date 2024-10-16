@@ -31,7 +31,6 @@
         "/src"
     ],
     "scripts": {
-        "publish": "softvisio-cli package publish",
         "test": "node --test '_tests/**/*.test.js'"
     }
 }
