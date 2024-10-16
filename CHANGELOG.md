@@ -1,5 +1,11 @@
 # Changelog
 
+### 6.5.2 (2024-10-16)
+
+No notable changes since the previous release.
+
+[Full list of the changes](https://github.com/softvisio-node/result/compare/v6.5.1...v6.5.2)
+
 ### 6.5.1 (2024-10-15)
 
 No notable changes since the previous release.
