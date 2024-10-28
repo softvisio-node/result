@@ -56,7 +56,7 @@ console.log( res.meta );       // "some data"
 
 ### result.exception( status, data?, meta? )
 
--   `status` {integer|Array} Status code or {Array} [status code, status text].
+-   `status` {integer|Array} Status code or {Array} \[status code, status text].
 -   `data?` {any} arbitrary Data that represents returned value. This data is accesible via `result.data` property.
 -   `meta?` {Object} Additional meta properties, that will be stored in the result object.
 -   Returns: {Result}.
