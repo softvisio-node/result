@@ -73,7 +73,7 @@ Creates new result exception object. Same, as [`result( status, data, properties
 -   `options?` {Object}:
     -   `allowUndefined` {boolean} Returns error if set to `false`. **Default:** `false`.
     -   `keepError` {boolean} If `res` is instance of the {Error} set error message as result `statusText`.
--   Returns: {Result}
+-   Returns: {Result}.
 
 Checks, that `res` is instance of {Result}. If `res` is:
 
