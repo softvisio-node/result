@@ -12,7 +12,6 @@ Under `node` environment it also register itself as `global.result`, so you don;
 
 ## Usage
 
-<!-- prettier-ignore -->
 ```javascript
 import result from "@softvisio/result";
 
@@ -43,7 +42,6 @@ Creates new result object.
 
 Example:
 
-<!-- prettier-ignore -->
 ```javascript
 const res = result( 500, { "a": 1 }, { "meta": "some data" } );
 
