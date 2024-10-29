@@ -1,5 +1,13 @@
 # Changelog
 
+### 6.5.4 (2024-10-29)
+
+Other changes:
+
+-   chore: update docs
+
+[Compare with the previous release: v6.5.3 ... v6.5.4](https://github.com/softvisio-node/result/compare/v6.5.3...v6.5.4)
+
 ### 6.5.3 (2024-10-20)
 
 No notable changes since the previous release.
