@@ -22,14 +22,14 @@ import result from "@softvisio/result";
 
 var res = result( 200 );
 
-res = result( [200, "Completed"] ); // custom status text
+res = result( [ 200, "Completed" ] ); // custom status text
 
-res = result( 200, { data } );      // with some data
+res = result( 200, { data } ); // with some data
 
 try {
     res = result.try( await someFunctionCall() );
 }
-catch (e) {
+catch ( e ) {
     res = result.catch( e );
 }
 ```
@@ -49,13 +49,13 @@ Example:
 
 <!-- prettier-ignore -->
 ```javascript
-const res = result( 500, { a: 1 }, { meta: "some data" } );
+const res = result( 500, { "a": 1 }, { "meta": "some data" } );
 
-console.log( res.ok );         // false
-console.log( res.status );     // 500
+console.log( res.ok ); // false
+console.log( res.status ); // 500
 console.log( res.statustext ); // internal server error
-console.log( res.data );       // {"a": 1}
-console.log( res.meta );       // "some data"
+console.log( res.data ); // {"a": 1}
+console.log( res.meta ); // "some data"
 ```
 
 ### result.exception( status, data?, meta? )
