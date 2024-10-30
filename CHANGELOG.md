@@ -1,5 +1,13 @@
 # Changelog
 
+### 6.5.6 (2024-10-30)
+
+Other changes:
+
+-   chore: migrate to node v22
+
+[Compare with the previous release: v6.5.5 ... v6.5.6](https://github.com/softvisio-node/result/compare/v6.5.5...v6.5.6)
+
 ### 6.5.5 (2024-10-29)
 
 Other changes:
