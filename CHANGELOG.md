@@ -1,5 +1,13 @@
 # Changelog
 
+### 6.5.7 (2024-11-10)
+
+Other changes:
+
+-   chore: update package metadata
+
+[Compare with the previous release: v6.5.6 ... v6.5.7](https://github.com/softvisio-node/result/compare/v6.5.6...v6.5.7)
+
 ### 6.5.6 (2024-10-30)
 
 Other changes:
