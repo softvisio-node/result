@@ -35,12 +35,12 @@ catch ( e ) {
 
 ### result( status, data?, meta? )
 
--   `status` {integer|Array|Error} Status code, {Error} object, result-like object (has `status` and `statusText` properties, for example, `node-fetch` result) or {Array}:
-    -   {integer} Status code.
-    -   {string} Status text.
--   `data?` {any} arbitrary Data that represents returned value. This data is accesible via `result.data` property.
--   `meta?` {Object} Additional meta properties, that will be stored in the result object.
--   Returns: {Result}.
+- `status` {integer|Array|Error} Status code, {Error} object, result-like object (has `status` and `statusText` properties, for example, `node-fetch` result) or {Array}:
+    - {integer} Status code.
+    - {string} Status text.
+- `data?` {any} arbitrary Data that represents returned value. This data is accesible via `result.data` property.
+- `meta?` {Object} Additional meta properties, that will be stored in the result object.
+- Returns: {Result}.
 
 Creates new result object.
 
@@ -58,67 +58,67 @@ console.log( res.meta ); // "some data"
 
 ### result.exception( status, data?, meta? )
 
--   `status` {integer|Array} Status code or {Array} \[status code, status text].
--   `data?` {any} arbitrary Data that represents returned value. This data is accesible via `result.data` property.
--   `meta?` {Object} Additional meta properties, that will be stored in the result object.
--   Returns: {Result}.
+- `status` {integer|Array} Status code or {Array} \[status code, status text].
+- `data?` {any} arbitrary Data that represents returned value. This data is accesible via `result.data` property.
+- `meta?` {Object} Additional meta properties, that will be stored in the result object.
+- Returns: {Result}.
 
 Creates new result exception object. Same, as [`result( status, data, properties )`](#result-status-data-properties-), but also set `result.exception` to the `true` in case if result is not successuful.
 
 ### result.try( res?, options? )
 
--   `res?` {any} Value to check.
--   `options?` {Object}:
-    -   `allowUndefined` {boolean} Returns error if set to `false`. **Default:** `false`.
-    -   `keepError` {boolean} If `res` is instance of the {Error} set error message as result `statusText`.
--   Returns: {Result}.
+- `res?` {any} Value to check.
+- `options?` {Object}:
+    - `allowUndefined` {boolean} Returns error if set to `false`. **Default:** `false`.
+    - `keepError` {boolean} If `res` is instance of the {Error} set error message as result `statusText`.
+- Returns: {Result}.
 
 Checks, that `res` is instance of {Result}. If `res` is:
 
--   {undefined}: returns `result( 200 )`.
--   {Result}: returns `res` as is.
--   Result-like object (object, that has `status` and `statusText` properties): returns `result( [res.status, res.statusText] )`.
--   {Error}: returns `result( [500, error.message] )`.
--   Any other value: returns `result( 500 )`.
+- {undefined}: returns `result( 200 )`.
+- {Result}: returns `res` as is.
+- Result-like object (object, that has `status` and `statusText` properties): returns `result( [res.status, res.statusText] )`.
+- {Error}: returns `result( [500, error.message] )`.
+- Any other value: returns `result( 500 )`.
 
 ### result.catch( res, options? )
 
--   `res` {any} Value to check.
--   `options?` {Object}:
-    -   `keepError` {boolean} If `res` is instance of {Error} set error message as result `statusText`.
-    -   `log` {boolean} Do not print error to the console.
--   Returns: {Result}.
+- `res` {any} Value to check.
+- `options?` {Object}:
+    - `keepError` {boolean} If `res` is instance of {Error} set error message as result `statusText`.
+    - `log` {boolean} Do not print error to the console.
+- Returns: {Result}.
 
 Checks, that `res` is instance of {Result}. If `res` is:
 
--   {Result}: returns `res` as is;
--   Result-like object (object, that has `status` and `statusText` properties): returns `result( [res.status, res.statusText] )`.
--   {Error}: returns `result( [500, error.message] )`.
--   Any other value converted to the {Error} object (`Error( res )`) and processed as described above.
+- {Result}: returns `res` as is;
+- Result-like object (object, that has `status` and `statusText` properties): returns `result( [res.status, res.statusText] )`.
+- {Error}: returns `result( [500, error.message] )`.
+- Any other value converted to the {Error} object (`Error( res )`) and processed as described above.
 
 ### result.fromJson( res )
 
--   `res` {Object} Result object data, produced by `Result.toJSON()`.
--   Returns: {Result}.
+- `res` {Object} Result object data, produced by `Result.toJSON()`.
+- Returns: {Result}.
 
 ### result.fromJsonRpc)
 
--   `msg` {Object} JSON RPC 2.0 message.
--   Returns: {Result}.
+- `msg` {Object} JSON RPC 2.0 message.
+- Returns: {Result}.
 
 Converts JSON RPC response message to the {Result} object.
 
 ### result.getHttpStatus( status )
 
--   `status` {integer} Status code.
--   Returns: {integer} Status code.
+- `status` {integer} Status code.
+- Returns: {integer} Status code.
 
 Returns status code in range, supported by `HTTP` protocol.
 
 ### result.getStatusText( status )
 
--   `status` {integer} Status code.
--   Returns: {string} Status text.
+- `status` {integer} Status code.
+- Returns: {string} Status text.
 
 Resolves status text by the status code.
 
@@ -126,56 +126,56 @@ Resolves status text by the status code.
 
 #### result.status
 
--   {integer} Status code.
+- {integer} Status code.
 
 #### result.statusText
 
--   {string} Status text.
+- {string} Status text.
 
 #### result.isException
 
--   {boolean} Returns `true` if result is exception.
+- {boolean} Returns `true` if result is exception.
 
 #### result.ok
 
--   {boolean} Returns `true` if result is successful, otherwise returns `false`.
+- {boolean} Returns `true` if result is successful, otherwise returns `false`.
 
 #### result.error
 
--   {boolean} Returns `true` if result is error.
+- {boolean} Returns `true` if result is error.
 
 #### result.is1xx
 
--   {boolean} Returns `true` if result code is in range: `100` - `199`.
+- {boolean} Returns `true` if result code is in range: `100` - `199`.
 
 #### result.is2xx
 
--   {boolean} Returns `true` if result code is in range: `200` - `299`.
+- {boolean} Returns `true` if result code is in range: `200` - `299`.
 
 #### result.is3xx
 
--   {boolean} Returns `true` if result code is in range: `300` - `399`.
+- {boolean} Returns `true` if result code is in range: `300` - `399`.
 
 #### result.is4xx
 
--   {boolean} Returns `true` if result code is in range: `400` - `499`.
+- {boolean} Returns `true` if result code is in range: `400` - `499`.
 
 #### result.is5xx
 
--   {boolean} Returns `true` if result code >= `500`.
+- {boolean} Returns `true` if result code >= `500`.
 
 #### result.toString()
 
--   Returns: {string}.
+- Returns: {string}.
 
 #### result.toJSON()
 
--   Returns: {string}.
+- Returns: {string}.
 
 #### result.toJsonRpc( id )
 
--   `id` {integer} JSON RPC message id.
--   Returns: {Object} JSON RPC response.
+- `id` {integer} JSON RPC message id.
+- Returns: {Object} JSON RPC response.
 
 Converts result object to the JSON RPC response.
 
