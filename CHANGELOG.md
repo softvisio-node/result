@@ -1,5 +1,15 @@
 # Changelog
 
+### 6.5.8 (2024-11-29)
+
+Other changes:
+
+- chore: lint
+- chore: rename tests directory
+- chore: update package metadata
+
+[Compare with the previous release: v6.5.7 ... v6.5.8](https://github.com/softvisio-node/result/compare/v6.5.7...v6.5.8)
+
 ### 6.5.7 (2024-11-10)
 
 Other changes:
