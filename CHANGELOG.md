@@ -1,5 +1,13 @@
 # Changelog
 
+### 6.5.9 (2024-12-07)
+
+Other changes:
+
+- chore: set yaml indent to 4 spaces
+
+[Compare with the previous release: v6.5.8 ... v6.5.9](https://github.com/softvisio-node/result/compare/v6.5.8...v6.5.9)
+
 ### 6.5.8 (2024-11-29)
 
 Other changes:
