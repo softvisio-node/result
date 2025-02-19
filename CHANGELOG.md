@@ -1,5 +1,13 @@
 # Changelog
 
+### 6.5.10 (2025-02-19)
+
+Other changes:
+
+- chore: update cli config
+
+Compare with the previous release: [`v6.5.9...v6.5.10`](https://github.com/softvisio-node/result/compare/v6.5.9...v6.5.10)
+
 ### 6.5.9 (2024-12-07)
 
 Other changes:
