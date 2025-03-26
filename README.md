@@ -8,7 +8,7 @@ Serializable result object, that encapsulates operation status, statusText and r
 
 ## Install
 
-```shell
+```sh
 npm install @softvisio/result
 ```
 
