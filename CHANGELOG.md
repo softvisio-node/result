@@ -1,5 +1,13 @@
 # Changelog
 
+### 6.5.13 (2025-03-26)
+
+Other changes:
+
+- chore: update markdown code tags
+
+Compare with the previous release: [`v6.5.12...v6.5.13`](https://github.com/softvisio-node/result/compare/v6.5.12...v6.5.13)
+
 ### 6.5.12 (2025-02-27)
 
 Other changes:
