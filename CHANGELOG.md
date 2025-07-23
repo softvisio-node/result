@@ -1,5 +1,13 @@
 # Changelog
 
+### v6.5.19 (2025-07-23)
+
+**Bug fixes:**
+
+- \[PATCH] fix: update editorconfig (● [82b4d74](https://github.com/softvisio-node/result/commit/82b4d74); 👬 zdm)
+
+Compare with the previous release: [v6.5.18](https://github.com/softvisio-node/result/compare/v6.5.18...v6.5.19)
+
 ### v6.5.18 (2025-07-22)
 
 **Bug fixes:**
